@@ -1,5 +1,5 @@
 #简介
-* vote-manager
+* vote-manager 2018年1月21日
 * weicang
 * pandaVisa
 * 和风天气
