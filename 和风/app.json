@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/recommend/recommend",
+    "pages/girl/girl",
+    "pages/userCenter/userCenter"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "冷刀子",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "iconPath"
+    },{
+      "pagePath": "pages/recommend/recommend",
+      "text": "推荐",
+      "iconPath": "iconPath"
+    },{
+      "pagePath": "pages/girl/girl",
+      "text": "妹子",
+      "iconPath": "iconPath"
+    },{
+      "pagePath": "pages/userCenter/userCenter",
+      "text": "我的",
+      "iconPath": "iconPath"
+    }]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  },
+  "debug": true
+}
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+<!--recommend.wxml-->
+<view class="container log-list">
+ hello {{text}}
+</view>
