@@ -1,33 +1,44 @@
 
 <template>
-  <view>123</view>
+  <view>
+    <view>等待3s</view>
+    <view>123 + {{number}}</view>
+  </view>
 </template>
 
 <script lang="typescript">
-  import wepy from 'wepy'
-  import sleep from '../utils/sleep'
+import wepy from 'wepy'
+import sleep from '../utils/sleep'
+let m:number = 0;
 
-  export default class Index extends wepy.page {
-    config = {
-      navigationBarTitleText: 'test'
-    }
-    components = {
-    }
-
-    mixins = []
-
-    data = {}
-
-
-    methods = {}
-
-    events = {}
-
-    async onLoad() {
-      let m:Number = 2;
-      console.log(1)
-      await sleep(3)
-      console.log(m)
-    }
+export default class Index extends wepy.page {
+  config = {
+    navigationBarTitleText: 'test'
   }
+  components = {
+  }
+
+  mixins = []
+
+  data = {
+    number: 0
+  }
+
+
+  methods = {
+
+  }
+
+  onLoad() {
+    this.loops()
+  }
+
+  async loops() {
+    console.log(this.number)
+    await sleep(1)
+    this.number = ++m;
+    this.$apply();
+    this.loops()
+  }
+}
 </script>
