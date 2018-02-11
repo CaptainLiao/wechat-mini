@@ -1,0 +1,33 @@
+
+<template>
+  <view>123</view>
+</template>
+
+<script lang="typescript">
+  import wepy from 'wepy'
+  import sleep from '../utils/sleep'
+
+  export default class Index extends wepy.page {
+    config = {
+      navigationBarTitleText: 'test'
+    }
+    components = {
+    }
+
+    mixins = []
+
+    data = {}
+
+
+    methods = {}
+
+    events = {}
+
+    async onLoad() {
+      let m:Number = 2;
+      console.log(1)
+      await sleep(3)
+      console.log(m)
+    }
+  }
+</script>
