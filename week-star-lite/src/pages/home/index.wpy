@@ -1,0 +1,11 @@
+
+<template>
+  <view>
+    <view>等待3s</view>
+    <view>123 + {{number}}</view>
+  </view>
+</template>
+
+<script lang="typescript" src="index.ts">
+
+</script>

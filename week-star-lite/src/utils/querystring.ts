@@ -42,7 +42,6 @@ exports.parse = (str) => {
   }, {});
 };
 
-
 function encode(value) {
   return encodeURIComponent(value);
 }

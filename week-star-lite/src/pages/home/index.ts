@@ -1,15 +1,5 @@
-
-<template>
-  <view>
-    <view>等待3s</view>
-    <view>123 + {{number}}</view>
-  </view>
-</template>
-
-<script lang="typescript">
 import wepy from 'wepy'
-import sleep from '../utils/sleep'
-let m:number = 0;
+import sleep from '../../utils/sleep'
 
 export default class Index extends wepy.page {
   config = {
@@ -31,14 +21,17 @@ export default class Index extends wepy.page {
 
   onLoad() {
     this.loops()
+    print('sss')
   }
 
+  m: number = 0;
   async loops() {
-    console.log(this.number)
     await sleep(1)
-    this.number = ++m;
+    this.number = ++this.m;
     this.$apply();
     this.loops()
   }
 }
-</script>
+function print(a: number) {
+  console.log('print the number ', a)
+}
