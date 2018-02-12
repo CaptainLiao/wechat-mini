@@ -1,0 +1,5 @@
+<template>
+  <view>我来自user</view>
+</template>
+
+<script lang="typescript" src="index.ts"></script>

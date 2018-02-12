@@ -1,4 +1,4 @@
-exports.stringify = (obj) => {
+export let stringify = (obj) => {
   if (!obj) {
     return '';
   } else {
@@ -29,7 +29,7 @@ exports.stringify = (obj) => {
 
 // NOTE: 同样没处理数组
 // 问题不是需不需要数组，而是以什么样的形式来传递数组
-exports.parse = (str) => {
+export let parse = (str) => {
   str = str.trim().replace(/^[?#&]/, '').replace('/\+/g', ' ');
 
   return str.split('&').reduce((r, s) => {

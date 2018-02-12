@@ -134,9 +134,9 @@ function diffDay(a, b) {
   return days
 }
 
-module.exports = {
-  toDate: toDate,
-  format: format,
-  zfill: zfill,
-  diffDay: diffDay
+export default {
+  toDate,
+  format,
+  zfill,
+  diffDay
 }

@@ -1,4 +1,5 @@
-import {sleep} from './sleep'
+import sleep from './sleep'
+
 async function withLoading(fn, title) {
   try {
     if (title) {

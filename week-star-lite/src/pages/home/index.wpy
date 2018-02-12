@@ -3,8 +3,10 @@
   <view>
     <view>等待3s</view>
     <view>123 + {{number}}</view>
+    <c-user></c-user>
   </view>
 </template>
+
 
 <script lang="typescript" src="index.ts">
 

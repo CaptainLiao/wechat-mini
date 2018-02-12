@@ -83,14 +83,14 @@ function validateIdCode(code) {
   };
 }
 
-function validatePhone(num) {
+function validatePhone(num: string): boolean {
   var pattern = /^1(3|4|5|7|8)\d{9}$/;
-  return pattern.test(num);
+  return pattern.test(num); // regexObj.prototype.test(str)
 }
 
-module.exports = {
-  email: validateEmail,
-  idCode: validateIdCode,
-  cnText: validateCnText,
-  phone: validatePhone
+export {
+  validateEmail as email,
+  validateIdCode as idCode,
+  validateCnText as cnText,
+  validatePhone as phone
 };
