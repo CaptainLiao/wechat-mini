@@ -4,6 +4,7 @@
     <view>等待3s</view>
     <view>123 + {{number}}</view>
     <c-user></c-user>
+    <button @tap="toUser">哈哈哈</button>
   </view>
 </template>
 
@@ -11,3 +12,7 @@
 <script lang="typescript" src="index.ts">
 
 </script>
+
+<style lang="less">
+
+</style>

@@ -1,13 +1,15 @@
 
 <script>
 import wepy from 'wepy'
+import withLoading from './utils/withLoading'
 import 'wepy-async-function'
-
+import Promise from 'promise-polyfill'
 
 export default class extends wepy.app {
   config = {
     pages: [
-      'pages/home/index'
+      'pages/home/index',
+      'pages/user/index'
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -24,6 +26,8 @@ export default class extends wepy.app {
   constructor () {
     super()
     this.use('requestfix')
+    this.use('promisify')
+    this.$withLoading = withLoading
   }
 }
 </script>

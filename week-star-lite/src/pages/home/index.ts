@@ -20,12 +20,16 @@ export default class Index extends wepy.page {
   }
 
   methods = {
-
+    toUser() {
+      this.$navigate('../user/index')
+    }
   }
 
   onLoad() {
     this.loops()
+
     print(phone('13266596743'))
+    print(this.$withLoading)
   }
 
   m: number = 0;

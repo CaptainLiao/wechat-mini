@@ -1,23 +1,24 @@
 import sleep from './sleep'
-
+import wepy from 'wepy'
+ 
 async function withLoading(fn, title) {
   try {
     if (title) {
-      wx.showLoading({
+      wepy.showLoading({
         title,
         mask: true
       })
     } else {
-      wx.showLoading({
+      wepy.showLoading({
         title: '加载中',
         mask: true
       })
     }
     let res = await fn()
-    await wx.hideLoading()
+    await wepy.hideLoading()
     return res
   } catch (e) {
-    await wx.hideLoading()
+    await wepy.hideLoading()
     throw (e)
   }
 
