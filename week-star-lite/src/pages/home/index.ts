@@ -29,7 +29,6 @@ export default class Index extends wepy.page {
     this.loops()
 
     print(phone('13266596743'))
-    print(this.$withLoading)
   }
 
   m: number = 0;
